@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import News from './components/News';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [ques,setQues]=useState("");
+    const [search,setSearch]=useState("");
+    return (
+        <div>
+            <div>
+                <form>
+                    <input type="text" value={ques} onChange={(e)=>{setQues(e.target.value)}}/>
+                    {/* <input type="submit" value="Submit" onClick={()=>{setSearch(ques)}}/> */}
+                </form>
+                <p>{ques}</p>
+            </div>
+            <News topic={ques}/>
+        </div>
+    )
 }
 
-export default App;
+export default App
