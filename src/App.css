@@ -1,0 +1,44 @@
+.intro {
+  display: grid;
+  /* background-color: #0b0c10; */
+  background-color: rgba(0, 102, 210, 0.2);
+  color: rgba(255, 0, 0);
+  border: 3px solid rgba(127, 255, 0);
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 3%;
+  margin: 3px;
+  padding: 5px;
+  border-style: double;
+}
+.maina {
+  text-align: center;
+  align-items: center;
+}
+.Link {
+  display: grid;
+  background-color: rgba(0, 102, 210, 0.2);
+  color: rgb(255, 0, 0);
+  border: 3px solid rgba(127, 255, 0);
+  font-size: x-large;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: goldenrod;
+  text-align: center;
+  align-items: center;
+  border-radius: 3%;
+  margin: 3px;
+  padding: 5px;
+  border-style: double;
+}
+
+#art {
+  color: rgb(24, 23, 23);
+  font-size: medium;
+  background-color: rgba(0, 255, 0, 0);
+}
